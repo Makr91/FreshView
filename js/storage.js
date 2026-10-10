@@ -20,7 +20,7 @@ class Storage {
     static get(items, callback) {
         chrome.storage.local.get(Object.keys(items), contents => {
             const error = chrome.runtime.lastError;
-            if (error) Logger.error("FreshView could not read preferences:", error.message);
+            if (error) Logger.error("FreshestView could not read preferences:", error.message);
             const values = {};
             for (const [key, fallback] of Object.entries(items)) {
                 values[key] = Storage.normalize(error ? undefined : contents?.[key], fallback);
@@ -32,7 +32,7 @@ class Storage {
     static set(items, callback) {
         chrome.storage.local.set(items, () => {
             const error = chrome.runtime.lastError;
-            if (error) Logger.error("FreshView could not save preferences:", error.message);
+            if (error) Logger.error("FreshestView could not save preferences:", error.message);
             if (callback) callback(!error);
         });
     }

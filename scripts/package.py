@@ -83,7 +83,7 @@ def validate(files):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Validate without creating an archive")
-    parser.add_argument("--output", type=Path, default=ROOT / "private/dist/FreshView.zip")
+    parser.add_argument("--output", type=Path, default=ROOT / "private/dist/FreshestView.zip")
     parser.add_argument("--firefox-id", help="Build a Firefox-only manifest using the maintainer's confirmed add-on ID")
     args = parser.parse_args()
     paths = [ROOT / "manifest.json", ROOT / "LICENSE"]
@@ -113,7 +113,7 @@ def main():
         with ZipFile(args.output) as archive:
             validate({name: archive.read(name) for name in archive.namelist()})
         print(f"Created and validated {args.output}")
-    print(f"Validated {len(files)} runtime files for FreshView {manifest['version']}")
+    print(f"Validated {len(files)} runtime files for FreshestView {manifest['version']}")
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ chrome.commands.onCommand.addListener(command => {
     commandQueue = commandQueue.then(() => new Promise(resolve => {
         const [key, fallback] = entry;
         Storage.get({[key]: fallback}, values => Storage.set({[key]: !values[key]}, resolve));
-    })).catch(() => Logger.error("FreshView could not process a keyboard command."));
+    })).catch(() => Logger.error("FreshestView could not process a keyboard command."));
 });
 
 chrome.tabs.onUpdated.addListener((tabID, changes) => {

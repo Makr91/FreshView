@@ -12,8 +12,8 @@
     "description": "Toggle watch threshold"
   },
   "optionsTitle": {
-    "message": "Configurações do FreshView",
-    "description": "FreshView settings"
+    "message": "Configurações do FreshestView",
+    "description": "FreshestView settings"
   },
   "preferences": {
     "message": "Configurações",
@@ -24,8 +24,8 @@
     "description": "Appearance"
   },
   "appearanceHelp": {
-    "message": "Deixe o FreshView com a cara do seu navegador.",
-    "description": "Make FreshView feel at home in your browser."
+    "message": "Deixe o FreshestView com a cara do seu navegador.",
+    "description": "Make FreshestView feel at home in your browser."
   },
   "languageNote": {
     "message": "O idioma acompanha automaticamente o do navegador.",
@@ -146,8 +146,8 @@
     "description": "Open a YouTube page to hide videos."
   },
   "refreshYoutube": {
-    "message": "Recarregue esta página do YouTube para conectar o FreshView.",
-    "description": "Refresh this YouTube page to connect FreshView."
+    "message": "Recarregue esta página do YouTube para conectar o FreshestView.",
+    "description": "Refresh this YouTube page to connect FreshestView."
   },
   "excludedPage": {
     "message": "A filtragem desta página está desativada nas Configurações.",

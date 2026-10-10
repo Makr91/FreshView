@@ -50,11 +50,11 @@ class Extractor {
     }
 }
 
-function freshviewDebugDOM() {
+function freshestviewDebugDOM() {
     const counts = Object.fromEntries(VIDEO_CARD_SELECTOR.split(",").map(selector =>
         [selector, document.querySelectorAll(selector).length]));
     const result = {counts, progressBars: document.querySelectorAll(Video.PROGRESS_SELECTOR).length};
-    console.info("[FreshView] DOM counts", result);
+    console.info("[FreshestView] DOM counts", result);
     return result;
 }
-window.freshviewDebugDOM = freshviewDebugDOM;
+window.freshestviewDebugDOM = freshestviewDebugDOM;

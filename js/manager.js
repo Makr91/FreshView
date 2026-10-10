@@ -60,7 +60,7 @@ class Manager {
                 this.poll();
             } catch (error) {
                 this.fullScan = true;
-                Logger.error("FreshView could not update video visibility.", error);
+                Logger.error("FreshestView could not update video visibility.", error);
             } finally {
                 this.timer = null;
             }
@@ -94,7 +94,7 @@ class Manager {
             }
         }
         this.display();
-        if (window.FRESHVIEW_DEBUG) console.debug("[FreshView] Poll", {full, checked: pending.size, hidden: this.album.getSize()});
+        if (window.FRESHVIEW_DEBUG) console.debug("[FreshestView] Poll", {full, checked: pending.size, hidden: this.album.getSize()});
     }
 
     display() {

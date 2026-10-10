@@ -12,8 +12,8 @@
     "description": "Toggle watch threshold"
   },
   "optionsTitle": {
-    "message": "FreshView 設定",
-    "description": "FreshView settings"
+    "message": "FreshestView 設定",
+    "description": "FreshestView settings"
   },
   "preferences": {
     "message": "設定",
@@ -24,8 +24,8 @@
     "description": "Appearance"
   },
   "appearanceHelp": {
-    "message": "讓 FreshView 更適合你的瀏覽器。",
-    "description": "Make FreshView feel at home in your browser."
+    "message": "讓 FreshestView 更適合你的瀏覽器。",
+    "description": "Make FreshestView feel at home in your browser."
   },
   "languageNote": {
     "message": "語言會自動配合瀏覽器設定。",
@@ -146,8 +146,8 @@
     "description": "Open a YouTube page to hide videos."
   },
   "refreshYoutube": {
-    "message": "請重新載入此 YouTube 頁面以連接 FreshView。",
-    "description": "Refresh this YouTube page to connect FreshView."
+    "message": "請重新載入此 YouTube 頁面以連接 FreshestView。",
+    "description": "Refresh this YouTube page to connect FreshestView."
   },
   "excludedPage": {
     "message": "此頁面的篩選功能已在設定中關閉。",

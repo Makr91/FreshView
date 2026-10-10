@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="img/icon48.png" width="48" height="48" alt="FreshView logo">
+  <img src="img/icon48.png" width="48" height="48" alt="FreshestView logo">
 </p>
 
-<h1 align="center">FreshView for YouTube™</h1>
+<h1 align="center">FreshestView for YouTube™</h1>
 
 <p align="center">
   Hide watched videos. Find something new.<br>
@@ -17,13 +17,13 @@
   <a href="#development">Development</a>
 </p>
 
-FreshView hides YouTube video cards using the watch-progress bars already displayed on the page. Your preferences stay on your device: no account-history retrieval, backend, or browsing-data collection.
+FreshestView hides YouTube video cards using the watch-progress bars already displayed on the page. Your preferences stay on your device: no account-history retrieval, backend, or browsing-data collection.
 
-Maintained by [roniel-rhack](https://github.com/roniel-rhack), based on [Mandrenkov's original FreshView](https://github.com/Mandrenkov/FreshView).
+Maintained by [Makr91](https://github.com/Makr91), a fork of [roniel-rhack's FreshView](https://github.com/roniel-rhack/FreshView), based on [Mandrenkov's original FreshView](https://github.com/Mandrenkov/FreshView).
 
-> **Current release: 3.2.1.** Available in Chrome Web Store and Mozilla Add-ons. This release includes the refreshed UI, six automatic interface languages, and browser-specific background manifests. [Install FreshView](#install).
+> **Current release: 3.3.0.** Adds the **Age threshold** control and the Firefox address-bar popup. [Install FreshestView](#install).
 
-## A look at FreshView
+## A look at FreshestView
 
 Enable hiding, choose how much of a video counts as watched, and lock that preference to a specific page.
 
@@ -33,22 +33,22 @@ Enable hiding, choose how much of a video counts as watched, and lock that prefe
     <th>Dark theme</th>
   </tr>
   <tr>
-    <td><img src="assets/ui-3.2.0/popup-light.png" width="380" alt="FreshView 3.2.0 popup in light theme, with hiding enabled and a 90 percent threshold"></td>
-    <td><img src="assets/ui-3.2.0/popup-dark.png" width="380" alt="FreshView 3.2.0 popup in dark theme, with hiding enabled and a 90 percent threshold"></td>
+    <td><img src="assets/ui-3.2.0/popup-light.png" width="380" alt="FreshestView 3.2.0 popup in light theme, with hiding enabled and a 90 percent threshold"></td>
+    <td><img src="assets/ui-3.2.0/popup-dark.png" width="380" alt="FreshestView 3.2.0 popup in dark theme, with hiding enabled and a 90 percent threshold"></td>
   </tr>
 </table>
 
 Settings brings appearance, video types, and page filters together. Labels are clickable, controls support the keyboard, and the layout adapts to narrow windows and enlarged text.
 
 <p align="center">
-  <img src="assets/ui-3.2.0/settings-light.png" width="760" alt="FreshView 3.2.0 settings in light theme, showing the theme selector and video-type and page filters">
+  <img src="assets/ui-3.2.0/settings-light.png" width="760" alt="FreshestView 3.2.0 settings in light theme, showing the theme selector and video-type and page filters">
 </p>
 
 <details>
 <summary>View Settings in dark theme</summary>
 
 <p align="center">
-  <img src="assets/ui-3.2.0/settings-dark.png" width="760" alt="FreshView 3.2.0 settings in dark theme with the same appearance and filter controls">
+  <img src="assets/ui-3.2.0/settings-dark.png" width="760" alt="FreshestView 3.2.0 settings in dark theme with the same appearance and filter controls">
 </p>
 
 </details>
@@ -57,14 +57,7 @@ Settings brings appearance, video types, and page filters together. Labels are c
 
 ## Install
 
-**Store availability verified: September 30, 2026.** Install the current release directly from your browser's official store.
-
-| Browser | Install | Current version |
-| --- | --- | --- |
-| **Chrome** | [Chrome Web Store](https://chromewebstore.google.com/detail/freshview-for-youtube/glologkcncopfogmaghfgcoloklmella) | **3.2.1** |
-| **Firefox** | [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/freshview-youtube-roniel/) | **3.2.1** |
-
-Version 3.2.1 is approved and publicly available in both stores. The links above identify this maintained fork; similarly named Firefox extensions may belong to other maintainers. GitHub's packaging workflow does not publish to either store.
+FreshestView is published on Mozilla Add-ons. Similarly named extensions belong to other maintainers. GitHub's packaging workflow does not publish to any store.
 
 ### Load locally for development
 
@@ -73,14 +66,14 @@ Chrome can load the repository directly. Firefox needs the browser-specific pack
 | Browser | Requirements | Load locally |
 | --- | --- | --- |
 | Chrome / compatible Chromium | **Chrome 121+** | Open `chrome://extensions` (or `edge://extensions`), enable **Developer mode**, choose **Load unpacked**, and select this repository's root folder. |
-| Firefox | **Firefox 142+** | Generate the [Firefox package](#build-packages), open `about:debugging#/runtime/this-firefox`, choose **Load Temporary Add-on**, and select the generated `FreshView-firefox.zip`. Allow access to YouTube if requested. |
+| Firefox | **Firefox 142+** | Generate the [Firefox package](#build-packages), open `about:debugging#/runtime/this-firefox`, choose **Load Temporary Add-on**, and select the generated `FreshestView-firefox.zip`. Allow access to YouTube if requested. |
 
 Firefox's temporary installation lasts until the browser restarts. After changing or updating a local installation, reload the extension and refresh open YouTube tabs.
 
 ## Quick start
 
 1. Open [desktop YouTube](https://www.youtube.com/).
-2. Open FreshView and enable **Hide watched videos**. It is off by default.
+2. Open FreshestView and enable **Hide watched videos**. It is off by default.
 3. Adjust **Minimum watched**. The default is **90%**; turning this control off hides only videos marked **100% watched**.
 4. Enable **Age threshold** to hide videos older than the selected age, from 1 hour to 20 years. It is off by default and works independently of **Hide watched videos**.
 5. Open **Settings** to choose page filters, video types, and appearance. **History** is excluded by default.
@@ -89,7 +82,7 @@ Firefox's temporary installation lasts until the browser restarts. After changin
 
 Choose **Lock setting on this page** to save the current hiding state for that exact URL, including its query string. This saved choice overrides the global toggle until you choose **Unlock this page**. Page exclusions in Settings still take precedence.
 
-The popup also explains when a page is excluded, unsupported, or needs refreshing to connect to FreshView.
+The popup also explains when a page is excluded, unsupported, or needs refreshing to connect to FreshestView.
 
 ### Where filtering works
 
@@ -123,7 +116,13 @@ The extension automatically follows the browser's **interface language**, with E
 
 Choose **System**, **Light**, or **Dark** in Settings. System follows the device's appearance and is the default for new installations; explicit light/dark preferences from older versions are preserved. Controls have visible keyboard focus and respect reduced-motion preferences.
 
-## What's new in 3.2.1
+## What's new in 3.3.0
+
+- **Age threshold:** hide videos older than a chosen age, from 1 hour to 20 years, independently of the watched-video filter.
+- Reads both long ("3 years ago") and short ("3y ago") upload ages, including ages that render after the card appears.
+- The Firefox package adds an address-bar popup on YouTube.
+
+### Included from 3.2.1
 
 - Remove Chrome's Manifest V3 warning by keeping only `background.service_worker` in the Chromium manifest.
 - Generate Firefox's ordered background scripts during packaging, preserving its add-on identity and runtime behavior.
@@ -173,7 +172,7 @@ Page locks store the pathname and query string of pages you explicitly lock. Not
 
 ## Development
 
-FreshView uses vanilla JavaScript, HTML, and CSS, with a Chromium service worker and Firefox background scripts. Read [AGENTS.md](AGENTS.md) for architecture and working conventions.
+FreshestView uses vanilla JavaScript, HTML, and CSS, with a Chromium service worker and Firefox background scripts. Read [AGENTS.md](AGENTS.md) for architecture and working conventions.
 
 ### Validate
 
@@ -191,12 +190,12 @@ Syntax and package checks do not replace browser testing. Verify hide/restore, t
 
 ```sh
 # Chromium package
-python3 scripts/package.py --output private/dist/FreshView.zip
+python3 scripts/package.py --output private/dist/FreshestView.zip
 
 # Firefox-only manifest with the stable add-on identity
 python3 scripts/package.py \
-  --firefox-id "freshview@roniel-rhack.github.io" \
-  --output private/dist/FreshView-firefox.zip
+  --firefox-id "freshestview@makr91.github.io" \
+  --output private/dist/FreshestView-firefox.zip
 ```
 
 The root manifest and Chromium archive use only `background.service_worker`. The Firefox archive uses only `background.scripts`, generated from the worker's shared imports in dependency order. Load the generated archive in Firefox, not the root manifest.
@@ -210,18 +209,18 @@ GitHub Actions checks syntax, builds an archive, and uploads it as an artifact. 
 
 Catalogs live in `_locales/<locale>/messages.json`, with `en` as the default. Keep keys and placeholders identical. `zh_Hans` mirrors `zh_CN`, and `zh_Hant` mirrors `zh_TW`; `uiLanguage` identifies the translated content for screen readers, including fallback cases.
 
-`js/i18n.js` applies text and attributes without interpreting translations as HTML. Never translate storage keys, selectors, or the FreshView brand. Store listing translations and screenshots are maintained separately in each developer dashboard.
+`js/i18n.js` applies text and attributes without interpreting translations as HTML. Never translate storage keys, selectors, or the FreshestView brand. Store listing translations and screenshots are maintained separately in each developer dashboard.
 
 </details>
 
 <details>
 <summary>Enable diagnostic output</summary>
 
-On YouTube, open DevTools and select **FreshView's content-script execution context**. The default page context cannot access the extension's isolated globals.
+On YouTube, open DevTools and select **FreshestView's content-script execution context**. The default page context cannot access the extension's isolated globals.
 
 ```js
 window.FRESHVIEW_DEBUG = true;
-window.freshviewDebugDOM();
+window.freshestviewDebugDOM();
 ```
 
 Navigate or change a filter to see diagnostic counts. The flag lasts for the current document and resets on a full reload. Set it to `false` when finished. Storage and processing errors are reported without enabling debug mode.
@@ -230,10 +229,10 @@ Navigate or change a filter to see diagnostic counts. The flag lasts for the cur
 
 ## Support and contributing
 
-[Report a bug or suggest an improvement](https://github.com/roniel-rhack/FreshView/issues). Include browser/extension versions, affected page type, enabled filters, expected behavior, and a minimal reproduction. Avoid sharing private URLs, account information, or browsing history.
+[Report a bug or suggest an improvement](https://github.com/Makr91/FreshView/issues). Include browser/extension versions, affected page type, enabled filters, expected behavior, and a minimal reproduction. Avoid sharing private URLs, account information, or browsing history.
 
 Pull requests are welcome. Keep changes focused and describe the browser checks performed and anything still unverified.
 
 ## License and credits
 
-[GNU GPL v3.0](LICENSE). Original project by [Mandrenkov](https://github.com/Mandrenkov); maintained fork by [roniel-rhack](https://github.com/roniel-rhack).
+[GNU GPL v3.0](LICENSE). Original project by [Mandrenkov](https://github.com/Mandrenkov); fork by [roniel-rhack](https://github.com/roniel-rhack); FreshestView by [Makr91](https://github.com/Makr91).

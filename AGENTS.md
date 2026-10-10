@@ -8,7 +8,7 @@
 
 # Project and execution contexts
 
-FreshView for YouTube hides watched video cards using progress indicators present in YouTube's DOM. It does not retrieve account watch history or call a backend. Settings use `chrome.storage.local`.
+FreshestView for YouTube hides watched video cards using progress indicators present in YouTube's DOM. It does not retrieve account watch history or call a backend. Settings use `chrome.storage.local`.
 
 There is no package manifest, build step, dependency installation, or committed automated test suite. The root directory is the unpacked extension.
 
